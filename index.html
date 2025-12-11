@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Tech - Tu Solución en Energía Solar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+        <div class="header-logos">
+            <div class="logo">
+                <div class="logo-img-container">
+                    <img src="logo.jpg" alt="Sun Tech Logo" class="logo-img">
+                </div>
+            </div>
+            
+            <!-- LOGOS DE ALIADOS EN EL HEADER -->
+            <div class="aliados-header">
+                <img src="https://dhalmi.com/wp-content/uploads/2024/07/SENA-FE-COLOR-1024x270.png" 
+                     alt="Logo Fondo Emprender" 
+                     class="aliado-logo fondo-emprender">
+                <img src="https://dhalmi.com/wp-content/uploads/2024/07/Presidencia-negro.png" 
+                     alt="Logo Presidencia de la República" 
+                     class="aliado-logo presidencia">
+            </div>
+        </div>
+        
+        <!-- Botón hamburguesa para móvil -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio" onclick="closeMobileMenu()">Inicio</a></li>
+            <li><a href="#beneficios" onclick="closeMobileMenu()">Beneficios</a></li>
+            <li><a href="#proceso" onclick="closeMobileMenu()">Proceso</a></li>
+            <li><a href="#kits" onclick="closeMobileMenu()">Kits</a></li>
+            <li><a href="#casos" onclick="closeMobileMenu()">Casos de Éxito</a></li>
+            <li><a href="#contacto" onclick="closeMobileMenu()">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>¡Tu Solución Energética!</h1>
+                <p class="hero-subtitle">Energía Solar para tu hogar y empresa con Sun Tech</p>
+                
+                <div class="cta-section">
+                    <h2>💰 Obtén tu estimado solar</h2>
+                    <p>Costos, ahorro, retorno de inversión e impacto ambiental</p>
+                    <p><strong>EN MENOS DE 1 MINUTO</strong></p>
+                    <br>
+                    <a href="#" class="cta-button" onclick="openCalculator()">CALCULAR AHORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <h2 class="section-title">Cárgate de Beneficios</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Ahorro Garantizado</h3>
+                    <p>Reduce significativamente tu factura de energía eléctrica desde el primer día de instalación.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Monitoreo en Tiempo Real</h3>
+                    <p>Estudio completo de conexión y sistema de monitoreo para controlar tu producción energética.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Garantía Extendida</h3>
+                    <p>12 años de garantía en paneles solares y 5 años en inversores. Tu inversión está protegida.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h3>Acompañamiento Legal</h3>
+                    <p>Te acompañamos en todo el proceso de conexión y legalización ante el operador de red.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏛️</div>
+                    <h3>Incentivos Tributarios</h3>
+                    <p>Gestión completa del certificado UPME para acceder a todos los beneficios fiscales.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Certificación RETIE</h3>
+                    <p>Entregamos certificado RETIE del sistema solar fotovoltaico completamente legalizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="proceso">
+        <div class="container">
+            <h2 class="section-title">Conoce Nuestro Proceso</h2>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Análisis</h3>
+                    <p>Evaluamos tu consumo energético y necesidades específicas para diseñar la solución perfecta.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Agendamiento</h3>
+                    <p>Programamos una visita técnica para evaluar las condiciones de tu propiedad.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Presentación</h3>
+                    <p>Te presentamos una propuesta detallada con costos, beneficios y cronograma de instalación.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Socialización</h3>
+                    <p>Explicamos todo el proceso y resolvemos todas tus dudas antes de la instalación.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">5</div>
+                    <h3>Instalación y Entrega</h3>
+                    <p>Instalamos tu sistema solar y te entregamos todo funcionando al 100%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kits" id="kits">
+        <div class="container">
+            <h2 class="section-title">Nuestros Kits Solares</h2>
+            <div class="kits-grid">
+                <div class="kit-card">
+                    <h3>🏠 Kit Residencial</h3>
+                    <p>Ideal para hogares de hasta 4 personas. Incluye 6 paneles de 450W, inversor, estructura y monitoreo.</p>
+                    <p><strong>Precio: $9.800.000 COP</strong></p>
+                </div>
+                <div class="kit-card">
+                    <h3>🏢 Kit Empresarial</h3>
+                    <p>Solución para pequeñas empresas. 12 paneles de 450W, inversor híbrido, batería opcional.</p>
+                    <p><strong>Precio: $18.500.000 COP</strong></p>
+                </div>
+                <div class="kit-card">
+                    <h3>🌄 Kit Rural</h3>
+                    <p>Diseñado para zonas sin red eléctrica. Incluye baterías, regulador, 8 paneles y soporte técnico.</p>
+                    <p><strong>Precio: $15.200.000 COP</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-cases" id="casos">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Casos de Éxito</h2>
+            
+            <div class="cases-grid">
+                <div class="case-card">
+                    <h3>🏠 PROYECTO RESIDENCIAL</h3>
+                    <h4>Casa en Medellín</h4>
+                    <p>Instalación de 20 paneles solares con ahorro del 85% en la factura eléctrica. Retorno de inversión en 4 años.</p>
+                </div>
+                
+                <div class="case-card">
+                    <h3>🏢 PROYECTO COMERCIAL</h3>
+                    <h4>Empresa Textil Bogotá</h4>
+                    <p>Sistema de 150kW instalado con reducción de costos operativos del 70% y mejora en sostenibilidad corporativa.</p>
+                </div>
+                
+                <div class="case-card">
+                    <h3>🏫 PROYECTO EDUCATIVO</h3>
+                    <h4>Colegio en Cali</h4>
+                    <p>100 paneles solares instalados, generando energía limpia y educando a estudiantes sobre sostenibilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer id="contacto">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Columna 1: Logo y texto -->
+            <div class="footer-section">
+                <img src="logo.jpg" alt="Sun Tech Logo Footer" class="footer-logo"> 
+                <p class="institutional-text">Transformando tu consumo energético.</p>
+            </div>
+            
+            <!-- Columna 2: Contacto y Redes Sociales combinadas -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📧 info@suntech.com</p>
+                <p>📞 (57) 3123751445</p>
+                
+                <h4 style="color: #FFD700; margin-top: 1.5rem; margin-bottom: 0.8rem;">Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61577853148093" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h2V2h-3c-3.87 0-5 2.5-5 5.5v2H7.5v4H11v8h4v-8z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2.7C5.5 4.7 4.7 5.5 4.7 7.6v8.8c0 2.1.8 2.9 2.9 2.9h8.8c2.1 0 2.9-.8 2.9-2.9V7.6c0-2.1-.8-2.9-2.9-2.9H7.6zM12 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 2.7c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3-1.3-.6-1.3-1.3.6-1.3 1.3-1.3zM16.5 6.4c-.6 0-1.1.5-1.1 1.1s.5 1.1 1.1 1.1 1.1-.5 1.1-1.1-.5-1.1-1.1-1.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Sun Tech. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="calculatorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeCalculator()">&times;</span>
+                <h2>🧮 Calculadora Solar Sun Tech</h2>
+                <p>Obtén tu estimado personalizado en menos de 1 minuto</p>
+            </div>
+            
+            <form class="calculator-form" id="solarCalculator">
+                <div class="form-section">
+                    <h3>📍 Información Básica</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ciudad *</label>
+                            <select id="city" name="city" required>
+                                <option value="">Selecciona tu ciudad</option>
+                                <option value="bogota">Bogotá</option>
+                                <option value="medellin">Medellín</option>
+                                <option value="cali">Cali</option>
+                                <option value="barranquilla">Barranquilla</option>
+                                <option value="cartagena">Cartagena</option>
+                                <option value="bucaramanga">Bucaramanga</option>
+                                <option value="pereira">Pereira</option>
+                                <option value="ibague">Ibagué</option>
+                                <option value="otra">Otra ciudad</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>⚡ Información Energética</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="billAmount">Valor promedio factura mensual (COP) *</label>
+                            <input type="number" id="billAmount" name="billAmount" min="50000" step="1000" required placeholder="Ej: 250000">
+                        </div>
+                        <div class="form-group">
+                            <label for="consumption">Consumo mensual (kWh) *</label>
+                            <input type="number" id="consumption" name="consumption" min="100" step="1" required placeholder="Ej: 300">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="propertyType">Tipo de propiedad *</label>
+                        <select id="propertyType" name="propertyType" required>
+                            <option value="">Selecciona el tipo</option>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="empresa">Empresa/Oficina</option>
+                            <option value="industria">Industria</option>
+                            <option value="comercio">Comercio</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>🏠 Características del Techo</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="roofArea">Área disponible del techo (m²)</label>
+                            <input type="number" id="roofArea" name="roofArea" min="10" step="1" placeholder="Ej: 50">
+                        </div>
+                        <div class="form-group">
+                            <label for="roofType">Tipo de techo</label>
+                            <select id="roofType" name="roofType">
+                                <option value="">Selecciona el tipo</option>
+                                <option value="tejas">Tejas de barro</option>
+                                <option value="lamina">Lámina metálica</option>
+                                <option value="concreto">Losa de concreto</option>
+                                <option value="eternit">Eternit/Fibrocemento</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="calculate-btn" onclick="calculateSolar()">
+                    🚀 CALCULAR MI PROYECTO SOLAR
+                </button>
+
+                <div id="results" class="results-section">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 2rem;">📊 Tu Estimado Solar Personalizado</h3>
+                    
+                    <div class="result-card">
+                        <h4>💰 Inversión Estimada</h4>
+                        <div class="result-value" id="investment">-</div>
+                        <p>Costo total del sistema solar recomendado</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h4>📉 Ahorro Mensual</h4>
+                        <div class="result-value" id="monthlySavings">-</div>
+                        <p>Reducción estimada en tu factura de energía</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h4>📈 Ahorro Anual</h4>
+                        <div class="result-value" id="yearlySavings">-</div>
+                        <p>Ahorro total proyectado por año</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h4>🔄 Retorno de Inversión</h4>
+                        <div class="result-value" id="paybackTime">-</div>
+                        <p>Tiempo estimado para recuperar tu inversión</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h4>🌱 Impacto Ambiental</h4>
+                        <div class="result-value" id="co2Reduction">-</div>
+                        <p>CO₂ que dejarás de emitir anualmente</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h4>⚡ Sistema Recomendado</h4>
+                        <div class="result-value" id="systemSize">-</div>
+                        <p>Capacidad y número de paneles sugeridos</p>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="button" class="calculate-btn" onclick="contactSales()" style="background: linear-gradient(45deg, #25D366, #128C7E); color: white;">
+                            📱 SOLICITAR COTIZACIÓN DETALLADA
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <div class="floating-btn" onclick="window.open('https://wa.me/573106876100?text=Hola, me interesa conocer más sobre los paneles solares de Sun Tech', '_blank')">
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
